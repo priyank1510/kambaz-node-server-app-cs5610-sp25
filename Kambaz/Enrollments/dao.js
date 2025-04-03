@@ -1,11 +1,10 @@
 import Database from "../Database/index.js";
-import { v4 as uuidv4 } from "uuid";
 
 
 
 export function enrollUserInCourse(userId, courseId) {
     const { enrollments } = Database;
-    enrollments.push({ _id: uuidv4(), user: userId, course: courseId });
+    enrollments.push({ _id: new Date().getTime().toString(), user: userId, course: courseId });
   }
   
 
