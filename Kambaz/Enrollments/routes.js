@@ -1,5 +1,6 @@
 import Database from "../Database/index.js";
 
+
 export default function EnrollmentRoutes(app) {
     
     app.get("/api/courses", (req, res) => {
